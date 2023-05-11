@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -eo pipefail
 
 # https://bugs.launchpad.net/neutron/+bug/1776778

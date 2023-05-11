@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -eo pipefail
 
 IMAGE=kubeovn/kube-ovn:v1.9.1
@@ -837,7 +837,7 @@ echo ""
 echo "[Step 8/8] Update kubectl ko plugin"
 mkdir -p /usr/local/bin
 cat <<\EOF > /usr/local/bin/kubectl-ko
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 KUBE_OVN_NS=kube-system

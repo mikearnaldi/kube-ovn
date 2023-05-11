@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 HW_OFFLOAD=${HW_OFFLOAD:-false}

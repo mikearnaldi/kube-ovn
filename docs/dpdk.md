@@ -168,7 +168,7 @@ Userspace-CNI is intended to run in an environment where OVS-DPDK is installed d
 
 ```bash
 cat <<EOF > /usr/local/bin/ovs-vsctl
-#!/bin/bash
+#!/usr/bin/env bash
 ovsCont=$(docker ps | grep kube-ovn | grep ovs-ovn | grep -v pause | awk '{print $1}')
 docker exec $ovsCont ovs-vsctl $@
 EOF

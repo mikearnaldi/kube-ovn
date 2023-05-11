@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 KUBE_OVN_NS=kube-system
 # set ovn-central replicas to 0

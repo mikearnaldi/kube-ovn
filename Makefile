@@ -1,5 +1,3 @@
-SHELL = /bin/bash
-
 include Makefile.e2e
 
 REGISTRY = kubeovn
@@ -715,7 +713,7 @@ scan:
 
 .PHONY: ut
 ut:
-	ginkgo -mod=mod -progress --always-emit-ginkgo-writer --slow-spec-threshold=60s test/unittest
+	ginkgo -mod=mod -v --poll-progress-after=10s test/unittest
 	go test ./pkg/...
 
 .PHONY: ipam-bench
