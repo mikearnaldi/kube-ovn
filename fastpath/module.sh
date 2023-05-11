@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 rm -f /tmp/kube_ovn_fastpath.ko

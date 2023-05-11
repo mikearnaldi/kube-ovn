@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -eu
 
 kubectl delete --ignore-not-found ds kube-ovn-pinger -n kube-system

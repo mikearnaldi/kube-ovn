@@ -1,0 +1,24 @@
+name: Modifications Flow
+on:
+  push:
+    branches:
+      - chore/modifications
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install nix
+        uses: cachix/install-nix-action@v20
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            auto-optimise-store = true
+            keep-outputs = true
+            keep-derivations = true
+      - name: Setup direnv
+        uses: HatsuneMiku3939/direnv-action@v1
+      - run: make build-kube-ovn

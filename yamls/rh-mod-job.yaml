@@ -71,7 +71,7 @@ metadata:
   name: install-module
 data:
   entrypoint.sh: |-
-    #!/bin/bash
+    #!/usr/bin/env bash
     yum install -y kernel-devel-$(uname -r)
     make all
     make install
@@ -84,7 +84,7 @@ metadata:
   name: install-local-module
 data:
   entrypoint.sh: |-
-    #!/bin/bash
+    #!/usr/bin/env bash
     yum localinstall -y /tmp/KERNEL_HEADER
     make all
     make install
@@ -97,7 +97,7 @@ metadata:
   name: install-module-without-header
 data:
   entrypoint.sh: |-
-    #!/bin/bash
+    #!/usr/bin/env bash
     make all
     make install
 
@@ -109,5 +109,5 @@ metadata:
   name: remove-module
 data:
   entrypoint.sh: |-
-    #!/bin/bash
+    #!/usr/bin/env bash
     make uninstall

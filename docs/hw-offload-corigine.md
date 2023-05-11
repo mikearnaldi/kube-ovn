@@ -48,7 +48,7 @@ You can follow the [agilio-open-vswitch-tc-user-guide](https://help.netronome.co
 1. Save the script below to manipulate the firmware
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 DEVICE=${1}
 DEFAULT_ASSY=scan
 ASSY=${2:-${DEFAULT_ASSY}}

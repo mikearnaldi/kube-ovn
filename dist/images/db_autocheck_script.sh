@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This is a script for check db content status and db cluster status
 # This script will exit with code 1 if check failed
 # This script is recommended for regular check, i.e., crontab, in a temporary processing

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 echo Connecting OVN SB "${OVN_SB_SERVICE_HOST}":"${OVN_SB_SERVICE_PORT}"

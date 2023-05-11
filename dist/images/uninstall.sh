@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 /usr/share/openvswitch/scripts/ovs-ctl stop
 ovs-dpctl del-dp ovs-system
 
